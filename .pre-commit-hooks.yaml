@@ -4,7 +4,7 @@
   language: system
   files: \.jl$
   entry: |
-    julia -e '
+    julia --startup-file=no -e '
     using Pkg
     Pkg.activate(".")
     using JuliaFormatter
