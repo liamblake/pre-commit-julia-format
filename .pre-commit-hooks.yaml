@@ -1,5 +1,5 @@
 - id: julia-format
-  name: format julia code
+  name: Format Julia code
   description: Run `JuliaFormatter.jl` against Julia source files
   language: system
   files: \.jl$
@@ -13,7 +13,7 @@
     if out == ""
         exit(0)
     else
-        @error "Some files have been formatted !!!"
+        @error "Some files have been formatted!"
         write(stdout, out)
         exit(1)
     end'
