@@ -5,8 +5,6 @@
   files: \.jl$
   entry: |
     julia --startup-file=no -e '
-    using Pkg
-    Pkg.activate(".")
     using JuliaFormatter
     format(ARGS)
     out = Cmd(`git diff --name-only`) |> read |> String
